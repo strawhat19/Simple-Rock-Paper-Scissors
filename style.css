@@ -1,0 +1,85 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: Arial, Helvetica, sans-serif;
+}
+
+.m0 { margin: 0; }
+.p0 { padding: 0; }
+.w70 { width: 70%; }
+.w75 { width: 75%; }
+.w80 { width: 80%; }
+.w85 { width: 85%; }
+.w90 { width: 90%; }
+.w95 { width: 95%; }
+.w100 { width: 100%; }
+.p35 { padding: 35px; }
+.flex { display: flex; }
+.gap5 { grid-gap: 5px; }
+.gap15 { grid-gap: 15px; }
+.pt5 { padding-top: 5px; }
+.gap35 { grid-gap: 35px; }
+.gap50 { grid-gap: 50px; }
+.m0Auto { margin: 0 auto; }
+.pb5 { padding-bottom: 5px; }
+.pb25 { padding-bottom: 25px; }
+.cursorPointer { cursor: pointer; }
+.borderRad5 { border-radius: 5px; }
+.alignEnd { align-items: flex-end; }
+.borderRad10 { border-radius: 10px; }
+.alignCenter { align-items: center; }
+.alignStart { align-items: flex-start; }
+.justifyCenter { justify-content: center; }
+.mXAuto { margin-left: auto; margin-right: auto; }
+.textCenter, .textAlignCenter { text-align: center; }
+.flexColumn, .flexColumns { flex-direction: column; }
+.spaceBetween, .justifySpaceBetween { justify-content: space-between; }
+
+body {
+    color: white;
+    min-height: 100dvh;
+    background: black;
+    font-family: var(--font);
+}
+
+.disabledLook {
+    pointer-events: none;
+}
+
+button {
+    border: none;
+    transition: 150ms ease-in-out;
+}
+
+button strong {
+    pointer-events: none;
+}
+
+button:active {
+    color: white;
+    background: black;
+}
+
+.active {
+    color: white;
+}
+
+.active.win, .active.Win {
+    background: limegreen;
+}
+
+.active.lose, .active.Lose {
+    background: red;
+}
+
+.active.draw, .active.Draw {
+    background: skyblue;
+}
+
+.stats {
+    font-size: 0.65em;
+}

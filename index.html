@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Rock, Paper, Scissors</title>
+    
+    <link rel="icon" href="	https://next-13-vite-comparison.vercel.app/piratechs.svg" type="image/x-icon"></link>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+
+    <script src="./rock-paper-scissors.js" defer></script>
+</head>
+
+<body class="body flex flexColumns alignCenter gap35">
+
+    <header class="header w70 mXAuto p35 textAlignCenter">
+        <h1>Rock, Paper, Scissors</h1>
+    </header>
+
+    <main class="main w70 mXAuto p35 textAlignCenter flex flexColumns gap50 justifyCenter alignCenter">
+
+        <section class="rockPaperScissorsSection section flex flexColumns justifyCenter alignCenter gap35 w100">
+            <h2 class="flex alignCenter justifyCenter gap5">Rock, Paper, Scissors<div class="stats"> - Draws: <span class="draws">0</span></div></h2>
+            <div class="playerChoices choiceButtons flex w100 spaceBetween alignCenter gap15 flexColumns">
+                <h3 class="w100 flex alignCenter justifyCenter gap5">You<div class="stats"> - Wins: <span class="wins">0</span> Losses: <span class="losses">0</span></div></h3>
+                <div class="buttonGroup flex w100 spaceBetween alignCenter gap15">
+                    <button class="customButton choiceButton w100 borderRad10 pt5 pb5 cursorPointer" onclick="selectChoice(event)">
+                        <strong>Rock</strong>
+                    </button>
+                    <button class="customButton choiceButton w100 borderRad10 pt5 pb5 cursorPointer" onclick="selectChoice(event)">
+                        <strong>Paper</strong>
+                    </button>
+                    <button class="customButton choiceButton w100 borderRad10 pt5 pb5 cursorPointer" onclick="selectChoice(event)">
+                        <strong>Scissors</strong>
+                    </button>
+                </div>
+            </div>
+            <div class="computerChoices choiceButtons flex w100 spaceBetween alignCenter gap15 flexColumns">
+                <h3 class="w100 flex alignCenter justifyCenter gap5">Computer<div class="stats"> - Wins: <span class="computerWins">0</span> Losses: <span class="computerLosses">0</span></div></h3>
+                <div class="buttonGroup flex w100 spaceBetween alignCenter gap15">
+                    <button class="customButton choiceButton computerChoice w100 borderRad10 pt5 pb5 disabledLook" onclick="event.preventDefault()">
+                        <strong>Rock</strong>
+                    </button>
+                    <button class="customButton choiceButton computerChoice w100 borderRad10 pt5 pb5 disabledLook" onclick="event.preventDefault()">
+                        <strong>Paper</strong>
+                    </button>
+                    <button class="customButton choiceButton computerChoice w100 borderRad10 pt5 pb5 disabledLook" onclick="event.preventDefault()">
+                        <strong>Scissors</strong>
+                    </button>
+                </div>
+            </div>
+            <div class="gameMessage"></div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
